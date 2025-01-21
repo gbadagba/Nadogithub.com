@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* div{
+   height: 10vh;
+   width: 100%;
+   background-color: rgb(151, 14, 14);
+} */
+body {
+  height: 100vh;
+  background: rgb(30, 36, 26);
+  display: grid;
+  place-items: center;
+}
+.voeux {
+  height: 10px;
+  font-size: 25px;
+  color: aliceblue;
+  margin-top: -500px;
+}
+.Name {
+  margin-top: 20px;
+  height: 10px;
+  font-size: 25px;
+  color: aliceblue;
+  margin-top: -430px;
+}
+audio {
+  height: 35px;
+  width: 100px;
+  margin-top: -550px;
+}
+.cont {
+  width: 70%;
+  width: 70%;
+  transform: perspective(900px);
+  display: grid;
+  place-items: center;
+}
+.imgCont {
+  width: 90%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transform-style: preserve-3d;
+  animation: rot 30s linear infinite;
+}
+img {
+  width: 200px;
+  height: 220px;
+  box-shadow: 0 0 5px grey;
+}
+
+video {
+  width: auto;
+  height: 220px;
+  box-shadow: 0 0 5px grey;
+}
+.Video{
+  width: auto;
+  height: 220px;
+  box-shadow: 0 0 5px grey;
+}
+.item {
+  position: absolute;
+  -webkit-box-reflect: below 10% linear-gradient(transparent, rgb(0, 0, 0, 0.2));
+  transform: rotateY(calc((var(--position)) * (360 / var(--quantity)) * 1deg))
+    translateZ(350px) rotateX(10deg);
+}
+
+@keyframes rot {
+  0% {
+    transform: perspective(900px) rotatex(-18deg) rotateY(0deg);
+  }
+  80% {
+    transform: perspective(900px) rotatex(14deg) rotateY(390deg);
+  }
+  100% {
+    transform: perspective(900px) rotatex(-18deg) rotateY(90deg);
+  }
+}
